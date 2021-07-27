@@ -8,7 +8,7 @@
 
 Split and merge labels in napari manually
 
-![](https://github.com/haesleinhuepf/napari-manual-split-and-merge-labels/raw/master/docs/images/split_and_merge_demo.gif)
+![](https://github.com/haesleinhuepf/napari-manual-split-and-merge-labels/raw/main/docs/images/split_and_merge_demo.gif)
 
 ----------------------------------
 
