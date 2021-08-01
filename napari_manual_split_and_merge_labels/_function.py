@@ -10,10 +10,10 @@ import napari
 # (The functions themselves are defined below)
 @napari_hook_implementation
 def napari_experimental_provide_function():
-    return [merge, split]
+    return [Manually_merge_labels, Manually_split_labels]
 
 
-def merge(labels_layer: napari.layers.Labels, points_layer: napari.layers.Points, viewer : napari.Viewer):
+def Manually_merge_labels(labels_layer: napari.layers.Labels, points_layer: napari.layers.Points, viewer : napari.Viewer):
     if points_layer is None:
         points_layer = viewer.add_points([])
         points_layer.mode = 'ADD'
@@ -33,7 +33,7 @@ def merge(labels_layer: napari.layers.Labels, points_layer: napari.layers.Points
     points_layer.data = []
 
 
-def split(labels_layer: napari.layers.Labels, points_layer: napari.layers.Points, viewer: napari.Viewer):
+def Manually_split_labels(labels_layer: napari.layers.Labels, points_layer: napari.layers.Points, viewer: napari.Viewer):
     if points_layer is None:
         points_layer = viewer.add_points([])
         points_layer.mode = 'ADD'
