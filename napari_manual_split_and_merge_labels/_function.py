@@ -2,7 +2,7 @@ from typing import TYPE_CHECKING
 
 import numpy as np
 from napari_plugin_engine import napari_hook_implementation
-
+from napari_tools_menu import register_function
 import napari
 
 
@@ -12,7 +12,7 @@ import napari
 def napari_experimental_provide_function():
     return [Manually_merge_labels, Manually_split_labels]
 
-
+@register_function(menu="Utilities > Manually merge labels")
 def Manually_merge_labels(labels_layer: napari.layers.Labels, points_layer: napari.layers.Points, viewer : napari.Viewer):
     if points_layer is None:
         points_layer = viewer.add_points([])
@@ -32,7 +32,7 @@ def Manually_merge_labels(labels_layer: napari.layers.Labels, points_layer: napa
     labels_layer.data = labels
     points_layer.data = []
 
-
+@register_function(menu="Utilities > Manually split labels")
 def Manually_split_labels(labels_layer: napari.layers.Labels, points_layer: napari.layers.Points, viewer: napari.Viewer):
     if points_layer is None:
         points_layer = viewer.add_points([])
