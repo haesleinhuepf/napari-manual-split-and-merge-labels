@@ -1,3 +1,9 @@
+This is a decommissioned napari plugin. The code has been moded to [napari-segment-blobs-and-things-with-membranes](https://github.com/haesleinhuepf/napari-segment-blobs-and-things-with-membranes).
+
+You can still install this plugin to napari as described below. It was last tested with napari 0.4.11.
+
+---
+
 # napari-manual-split-and-merge-labels
 
 [![License](https://img.shields.io/pypi/l/napari-manual-split-and-merge-labels.svg?color=green)](https://github.com/haesleinhuepf/napari-manual-split-and-merge-labels/raw/master/LICENSE)
@@ -18,7 +24,7 @@ This [napari] plugin was generated with [Cookiecutter] using with [@napari]'s [c
 
 You can install `napari-manual-split-and-merge-labels` via [pip]:
 
-    pip install napari-manual-split-and-merge-labels
+    pip install napari-manual-split-and-merge-labels==0.1.3
 
 ## Contributing
 
