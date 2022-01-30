@@ -1,4 +1,4 @@
-This is a decommissioned napari plugin. The code has been moded to [napari-segment-blobs-and-things-with-membranes](https://github.com/haesleinhuepf/napari-segment-blobs-and-things-with-membranes).
+This is a decommissioned napari plugin. The code has been moved to [napari-segment-blobs-and-things-with-membranes](https://github.com/haesleinhuepf/napari-segment-blobs-and-things-with-membranes).
 
 You can still install this plugin to napari as described below. It was last tested with napari 0.4.11.
 
